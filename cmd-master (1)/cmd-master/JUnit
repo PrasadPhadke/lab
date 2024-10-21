@@ -1,0 +1,45 @@
+1. checks versions:
+        java -version
+        mvn -version
+        where java
+        where mvn
+
+Step 2: Login Jenkins admin and go to manage jenkins > Tools\
+
+Step 3: Login Jenkins admin and go to manage jenkins > Tools
+        name: JAVA_HOME
+        path: give path from cmd
+
+Step 4:set the maven path in Jenkins as shown below & Click on the Apply
+        name : MAVEN_HOME
+        path as per cmd
+
+Step 5:Click on the Manage Jenkins>Plugins
+
+Step 6:Click installed plugin and check if TestNG Result is installled or not.
+
+Step 7:Create a new FreeStyle project.Give the Name of the project –
+JUnitReport_Demo.Click on the Freestyle project.
+
+Step 8:Select a custom workspace and provide the full path of the project.
+        path : C users student jUnit_demo
+
+Step 10:In the Build Steps section, select Invoke top-level Maven targets.
+
+Step 11:In the Build Steps section, select Invoke top-level Maven targets.
+      maven_version : MAVEN_HOME
+      goals: clean test
+
+Step 12: under advance option Provide the full path to pom.xml
+
+Scroll down to “Post Build Actions” and click on the “Add Post Build Actions” 
+drop-down list select "publish Junit test result report"
+
+Enter the Result Path as “**/target/surefire-reports/*.xml”. Click on the
+Apply and Save buttons
+
+Execute the tests by clicking on the “Build Now” button.
+
+
+
+

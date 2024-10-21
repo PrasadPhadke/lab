@@ -1,0 +1,37 @@
+jagan@JMS MINGW64 ~
+$ git clone https://github.com/Jagannath0246/BookMyJourney.git
+Cloning into 'BookMyJourney'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+jagan@JMS MINGW64 ~
+$ cd BookMyJourney
+
+jagan@JMS MINGW64 ~/BookMyJourney (main)
+$ git remote add upstream https://github.com/Darshanrane123/BookMyJourney.git   
+jagan@JMS MINGW64 ~/BookMyJourney (main)
+$ git fetch upstream
+remote: Enumerating objects: 2392, done.
+remote: Counting objects: 100% (2392/2392), done.
+remote: Compressing objects: 100% (1827/1827), done.
+remote: Total 2392 (delta 520), reused 2356 (delta 484), pack-reused 0 (from 0)
+Receiving objects: 100% (2392/2392), 5.25 MiB | 627.00 KiB/s, done.
+Resolving deltas: 100% (520/520), done.
+From https://github.com/Darshanrane123/BookMyJourney
+ * [new branch]      main       -> upstream/main
+ * [new branch]      master     -> upstream/master
+
+jagan@JMS MINGW64 ~/BookMyJourney (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+jagan@JMS MINGW64 ~/BookMyJourney (main)
+$ git merge upstream/main
+Already up to date.
+
+jagan@JMS MINGW64 ~/BookMyJourney (main)
+$ git push origin main
+remote: Permission to Jagannath0246/BookMyJourney.git denied to CamPuter69.

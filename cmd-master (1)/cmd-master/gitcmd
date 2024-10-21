@@ -1,0 +1,31 @@
+# 1. Create Git repository
+git init
+
+# 2. Check the status of the Git repository
+git status
+
+# 3. Set user details
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# 4. List all contributors
+git shortlog -sn
+
+# 5. Pull remote GitHub repository to local
+git clone https://github.com/<username>/<repository>.git   # If not cloned yet
+git pull origin master  # If already cloned
+
+# 6. Create and switch to a new branch
+git checkout -b feature/add-my-name
+
+git commit -m "Initial commit"
+
+git remote add origin https://github.com/your-username/your-repo.git
+
+git push -u origin master
+
+git merge feature-branch
+
+git checkout master   (change branch)
+
+git checkout -b xyz  (create an new branch)
